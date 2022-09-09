@@ -88,6 +88,9 @@ resource appServiceApp 'Microsoft.Web/sites@2021-01-15' = {
           value: reviewApiKey
         }
       ]
+      linuxFxVersion: 'DOTNETCORE|3.1'
+      alwaysOn: false
+      ftpsState: 'FtpsOnly'
     }
   }
 }
