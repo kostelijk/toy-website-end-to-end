@@ -23,8 +23,8 @@ Describe 'Toy Website' {
     }
 
     It 'Returns a success code from the health check endpoint' {
-      # $response = Invoke-WebRequest -Uri "https://$HostName/health" -SkipHttpErrorCheck
-      $response = Invoke-WebRequest -Uri "https://$HostName/" -SkipHttpErrorCheck
+      $response = Invoke-WebRequest -Uri "https://$HostName/health" -SkipHttpErrorCheck
+      # $response = Invoke-WebRequest -Uri "https://$HostName/" -SkipHttpErrorCheck
       Write-Host $response.Content
       $response.StatusCode |
         Should -Be 200 -Because "the website and configuration should be healthy"
