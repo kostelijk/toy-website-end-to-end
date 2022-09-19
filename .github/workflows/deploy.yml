@@ -25,7 +25,7 @@ on:
       reviewApiKey:
         required: true
       sqlServerAdministratorLoginPassword:
-        required: true
+        required: false
 
 permissions:
   id-token: write
