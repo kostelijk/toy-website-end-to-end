@@ -13,7 +13,7 @@ on:
         required: true
         type: string
       sqlServerAdministratorLogin:
-        required: true
+        required: false
         type: string
     secrets:
       AZURE_CLIENT_ID:
