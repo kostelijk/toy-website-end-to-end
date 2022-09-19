@@ -44,7 +44,7 @@ jobs:
       environmentType: Production
       resourceGroupName: ToyWebsiteEndToEndProduction
       reviewApiUrl: https://api.contoso.com/reviews
-      sqlServerAdministratorLogin: ToyCompanyAdmin
+      #sqlServerAdministratorLogin: ToyCompanyAdmin
     secrets:
       AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID_PRODUCTION }}
       AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
