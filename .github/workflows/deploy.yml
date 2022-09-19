@@ -24,7 +24,7 @@ on:
         required: true
       reviewApiKey:
         required: true
-      sqlServerAdministatorLoginPassword:
+      sqlServerAdministratorLoginPassword:
         required: true
 
 permissions:
