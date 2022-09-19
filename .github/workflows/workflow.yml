@@ -37,9 +37,9 @@ jobs:
   deploy-production:
     uses: ./.github/workflows/deploy.yml
     needs:
-      - deploy-test
-      - build
-      - deploy-test
+    - lint
+    - build
+    - deploy-test
     with:
       environmentType: Production
       resourceGroupName: ToyWebsiteEndToEndProduction
