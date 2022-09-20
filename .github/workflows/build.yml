@@ -3,7 +3,7 @@ name: build-website
 on:
   workflow_call:
 
-# Build the application and database
+# Build the application and database.
 jobs:
   build-application:
     name: Build application
