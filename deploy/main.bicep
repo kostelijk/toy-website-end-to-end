@@ -6,7 +6,7 @@ param location string = resourceGroup().location
   'Production'
   'Test'
 ])
-param environmentType string
+param environmentType string = 'Production'
 
 @description('A unique suffix with maximum length of 13 to add to resource names that need to be globally unique.')
 @maxLength(13)
