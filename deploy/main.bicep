@@ -5,6 +5,7 @@ param location string = resourceGroup().location
 @allowed([
   'Production'
   'Test'
+  'Acceptance'
 ])
 param environmentType string = 'Production'
 
