@@ -189,6 +189,9 @@ resource sqlDatabase 'Microsoft.Sql/servers/databases@2021-02-01-preview' = {
   name: sqlDatabaseName
   location: location
   sku: environmentConfigurationMap[environmentType].sqlDatabase.sku
+  properties:{
+    requestedBackupStorageRedundancy:'Local'
+  }
 }
 
 output appServiceAppName string = appServiceApp.name
